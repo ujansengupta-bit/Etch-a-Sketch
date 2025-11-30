@@ -1,0 +1,8 @@
+#grid_containers{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px auto;
+}
+#grid_containers>div{
+    border: 1px solid black;
+}
