@@ -7,16 +7,28 @@
     </head>
     <body>
         <div class="logo">ETCH A SKETCH</div>
-        <label id="grid">Set Grid Size between 2 and 100: </label>
-        <input id="input"> 
-        <div class="colors">
-            <div id="black">black</div>
-            <div id="red">red</div>
-            <div id="blue">blue</div>
-            <div id="white">erase</div>
+        <div id="grid">Set Grid Size between 2 and 100: </label>
+        <input type="number" min="2" max="100" value="16" id="input_val">
+        <div id="error">Size must be between 2 and 100</div>
+        <div class="color">
+            <button onclick="changeColor('black')">black</button>
+            <button onclick="changeColor('red')">red</button>
+            <button onclick="changeColor('blue')">blue</button>
+            <button onclick="changeColor('white')">erase</button>
+            <button onclick="changeColor('random')">random</button>
+            <div>
+            <button onclick="changeColor('custom')">Use RGB</button>
+              <div>
+                  R: <input type="number" id="r_val" min="0" max="255" value="0">
+                  G: <input type="number" id="g_val" min="0" max="255" value="0">
+                  B: <input type="number" id="b_val" min="0" max="255" value="0">
+                  <div id="error2">Value must be btween 0 and 255</div>
+              </div>
+            </div>
+            <button onclick="createGrid(parseInt(input_val.value, 10))">reset</button>
         </div>
         <div id="grid_containers">
-        </div>
+          </div>
       <script src="script.js" defer></script>
     </body>
 </html>
