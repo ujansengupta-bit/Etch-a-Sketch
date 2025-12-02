@@ -2,10 +2,10 @@
     display: flex;
     flex-wrap: wrap;
     margin: 100px auto;
+    border: 1px solid black;
 }
 #grid_containers>div{
     box-sizing: border-box;
-    border: 1px solid black;
 }
 
 .top{
