@@ -6,27 +6,29 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
+      <div class="top">
         <div class="logo">ETCH A SKETCH</div>
-        <div id="grid">Set Grid Size between 2 and 100: </label>
+        <div id="grid">Set Grid Size between 2 and 100: </div>
         <input type="number" min="2" max="100" value="16" id="input_val">
         <div id="error">Size must be between 2 and 100</div>
-        <div class="color">
-            <button onclick="changeColor('black')">black</button>
-            <button onclick="changeColor('red')">red</button>
-            <button onclick="changeColor('blue')">blue</button>
-            <button onclick="changeColor('white')">erase</button>
-            <button onclick="changeColor('random')">random</button>
-            <div>
-            <button onclick="changeColor('custom')">Use RGB</button>
+      </div>  
+      <div class="color">
+          <div id= "button_choose">
+            <button id="black" onclick="changeColor('black')">black</button>
+            <button id="red" onclick="changeColor('red')">red</button>
+            <button id="blue" onclick="changeColor('blue')">blue</button>
+            <button id="white" onclick="changeColor('white')">erase</button>
+            <button id="random" onclick="changeColor('random')">random</button>
+          </div>
+            <button id="rgb" onclick="changeColor('custom')">Use RGB</button>
               <div>
-                  R: <input type="number" id="r_val" min="0" max="255" value="0">
-                  G: <input type="number" id="g_val" min="0" max="255" value="0">
-                  B: <input type="number" id="b_val" min="0" max="255" value="0">
-                  <div id="error2">Value must be btween 0 and 255</div>
+                 R: <input type="number" id="r_val" min="0" max="255" value="0">
+                 G: <input type="number" id="g_val" min="0" max="255" value="0">
+                 B: <input type="number" id="b_val" min="0" max="255" value="0">
+                 <div id="error2">Value must be btween 0 and 255</div>
               </div>
-            </div>
-            <button onclick="createGrid(parseInt(input_val.value, 10))">reset</button>
-        </div>
+            <button id="reset" onclick="createGrid(parseInt(input_val.value, 10))">reset</button>
+      </div>
         <div id="grid_containers">
           </div>
       <script src="script.js" defer></script>

@@ -7,3 +7,107 @@
     box-sizing: border-box;
     border: 1px solid black;
 }
+
+.top{
+    width: fit-content;
+    height: fit-content;
+    background-color: blueviolet;
+    text-align: center;
+    margin: 50px auto;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+.logo{
+    margin: 10px auto;
+    margin: 30px auto;
+    font-size: 50px;
+    background-color: blue;
+    color: chocolate;
+}
+
+#grid{
+    background-color: aqua;
+    width: fit-content;
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+#error{
+    background-color: white;
+    color: red;
+}
+
+.color{
+    text-align: center;
+    margin: 50px auto;
+    width: fit-content;
+    border-radius: 8px;
+}
+
+#button_choose{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 50px;
+    padding: 10px;
+    background-color: deeppink;
+    border-radius: 8px;
+}
+
+#black{
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: black;
+    color: white; 
+}
+
+#red{
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;   
+    background-color: red;
+    color: white
+}
+
+#blue{
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: blue;
+    color: white
+}
+
+#white{
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+#random{
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+#rgb{
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
+#error2{
+    color: red;
+    background-color: white;
+    margin: 20px auto;
+}
+
+#reset{
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: grey;
+    color: white;
+}
